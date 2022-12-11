@@ -58,7 +58,6 @@ for r in range(rounds):
             #item_op //= 3
             t = ((item_op % monkey.test) == 0)
             item_op %= toModulo
-            #else : item_op = ((item_op // monkey.test) + (item_op % monkey.test))
             m = monkey.throws[0] if t else monkey.throws[1]
             monkeys[m].items.append(item_op)
     #print(f"After round {r+1}")
